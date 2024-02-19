@@ -1,12 +1,16 @@
 import { Metadata } from 'next';
 
+import RecordCategories from '@/modules/record-category/components';
+
 import { PageBaseProps } from '@/common/interfaces/page.interface';
 
 export default function MyRecordsPage(_pageProps: PageBaseProps) {
   return (
     <div className="grow">
       <div className="container">
-        <h1>My Records</h1>
+        <div className="w-[960px] mx-auto">
+          <RecordCategories />
+        </div>
       </div>
     </div>
   );
