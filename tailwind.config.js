@@ -151,6 +151,7 @@ module.exports = {
         'in-out-back': 'cubic-bezier(0.68, -0.6, 0.32, 1.6)'
       },
       animation: {
+        'stroke-dash': 'strokeDash 1s ease-out forwards',
         'h-line': 'hLine 200ms ease-in-out infinite',
         'zoom-in': 'zoomIn 6s',
         'zoom-out': 'zoomOut 6s',
@@ -166,6 +167,9 @@ module.exports = {
         500: '500ms'
       },
       keyframes: {
+        strokeDash: {
+          '0%': { strokeDasharray: '0 100' }
+        },
         hLine: {
           '0%': { width: '0px' },
           '100%': { width: '100%' }

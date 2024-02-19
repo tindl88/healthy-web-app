@@ -1,7 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 
-import AchievementRate from '@/modules/achievement-rate';
+import AchievementRate from '@/modules/achievement-rate/components/achievement-rate';
 import BodyFatPercentGraph from '@/modules/body-fat-percent-graph/components/body-fat-percent-graph';
 import MealCategories from '@/modules/meal-category/components/meal-categories';
 import MealHistory from '@/modules/meal-history/components';
