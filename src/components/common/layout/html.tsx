@@ -7,7 +7,7 @@ type HtmlProps = {
 
 const Html: FC<HtmlProps> = ({ children, locale = 'jp' }) => {
   return (
-    <html className="scrollbar h-full min-h-full" lang={locale}>
+    <html className="scrollbar h-full" lang={locale}>
       {children}
     </html>
   );

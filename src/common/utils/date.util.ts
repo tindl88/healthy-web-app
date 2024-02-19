@@ -27,3 +27,7 @@ export function getDaysBetweenTwoDates(from?: string, to?: string): number {
 
   return dateFrom.diff(dateTo, 'day') + 1;
 }
+
+export const formatMMDD = (date: string): string => {
+  return dayjs(date).format('MM.DD');
+};

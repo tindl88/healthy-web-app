@@ -1,0 +1,55 @@
+{
+  "statusCode": 200,
+  "message": "Get meal histories successfully.",
+  "data": [{
+    "id": "b9047364-46af-4d75-8e5f-b452cec20804",
+    "image": "/images/m01.jpg",
+    "title": "Dinner",
+    "createAt": "2023-10-21T19:47:27Z"
+  }, {
+    "id": "5baaac92-ca9b-4876-a920-134b1d105601",
+    "image": "/images/m03.jpg",
+    "title": "Dinner",
+    "createAt": "2023-11-11T02:17:57Z"
+  }, {
+    "id": "2673f38d-f4a1-4a7b-8c13-12e9afa4d50d",
+    "image": "/images/m02.jpg",
+    "title": "Dinner",
+    "createAt": "2023-04-02T22:46:49Z"
+  }, {
+    "id": "628672a1-7521-478e-bd57-d57555a9f948",
+    "image": "/images/m01.jpg",
+    "title": "Dinner",
+    "createAt": "2023-03-24T06:13:18Z"
+  }, {
+    "id": "61c768cc-bb4d-4849-b82c-174b85c64d51",
+    "image": "/images/m03.jpg",
+    "title": "Dinner",
+    "createAt": "2023-06-23T23:10:53Z"
+  }, {
+    "id": "ce19f117-fde1-470f-a875-b6f596b9d917",
+    "image": "/images/m03.jpg",
+    "title": "Dinner",
+    "createAt": "2023-09-08T18:38:05Z"
+  }, {
+    "id": "9a138010-df77-4dc4-a1ec-48ed31cff0a9",
+    "image": "/images/m02.jpg",
+    "title": "Dinner",
+    "createAt": "2023-07-28T19:35:06Z"
+  }, {
+    "id": "fee91880-400e-4c1c-b0fd-685a4cefc3b7",
+    "image": "/images/m01.jpg",
+    "title": "Dinner",
+    "createAt": "2023-05-23T19:14:59Z"
+  }],
+  "meta": {
+    "paging": {
+      "currentPage": 2,
+      "itemsPerPage": 8,
+      "totalItems": 18,
+      "totalPages": 3,
+      "prevPage": 1,
+      "nextPage": 3
+    }
+  }
+}

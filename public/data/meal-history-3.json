@@ -1,0 +1,25 @@
+{
+  "statusCode": 200,
+  "message": "Get meal histories successfully.",
+  "data": [{
+    "id": "d8d741a5-69c0-4368-b56f-45cf8de489e8",
+    "image": "/images/m01.jpg",
+    "title": "Lunch",
+    "createAt": "2023-08-04T13:02:40Z"
+  }, {
+    "id": "b01610a2-32e1-4299-8fb6-ca62d52a2832",
+    "image": "/images/m03.jpg",
+    "title": "Dinner",
+    "createAt": "2023-06-12T00:33:30Z"
+  }],
+  "meta": {
+    "paging": {
+      "currentPage": 3,
+      "itemsPerPage": 5,
+      "totalItems": 8,
+      "totalPages": 2,
+      "prevPage": 1,
+      "nextPage": null
+    }
+  }
+}
