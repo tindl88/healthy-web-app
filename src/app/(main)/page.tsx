@@ -1,13 +1,15 @@
 import React from 'react';
 import { Metadata } from 'next';
 
+import MealCategories from '@/modules/meal-category/components/meal-categories';
+
 import { PageBaseProps } from '@/common/interfaces/page.interface';
 
 export default function HomePage(_pageProps: PageBaseProps) {
   return (
     <div className="grow">
       <div className="container">
-        <h1>Top Page</h1>
+        <MealCategories />
       </div>
     </div>
   );
