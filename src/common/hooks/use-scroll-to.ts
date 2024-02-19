@@ -10,7 +10,7 @@ export default function useScrollTo() {
 function toElement(selector: string) {
   const anchor = document.querySelector(selector);
 
-  if (anchor) anchor.scrollIntoView();
+  if (anchor) anchor.scrollIntoView({ behavior: 'smooth' });
 }
 
 function toElementWithOffset(selector: string, offset = 0) {
@@ -22,7 +22,7 @@ function toElementWithOffset(selector: string, offset = 0) {
 
   window.scroll({
     behavior: 'smooth',
-    top: targetRect.top + window.pageYOffset + offset
+    top: targetRect.top + window.scrollY + offset
   });
 }
 
