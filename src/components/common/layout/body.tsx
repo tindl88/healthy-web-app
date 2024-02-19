@@ -2,6 +2,7 @@ import React, { FC, ReactNode } from 'react';
 import classNames from 'classnames';
 
 import Footer from '../footer/footer';
+import ScrollToTop from '../scroll-to-top/scroll-to-top';
 import TopBar from '../topbar/topbar';
 
 import BodyInjector from './body-injector';
@@ -19,6 +20,7 @@ const Body: FC<BodyProps> = ({ className, children }) => {
         <TopBar />
         {children}
         <Footer />
+        <ScrollToTop />
         <BodyInjector />
       </Providers>
     </body>
