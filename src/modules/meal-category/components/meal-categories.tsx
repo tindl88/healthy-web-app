@@ -31,7 +31,7 @@ const MealCategories: FC<MealCategoriesProps> = ({ className, ...rest }) => {
               <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
                 <div>
                   <div className="flex justify-center">{item.icon}</div>
-                  <h3 className="text-xl text-white">{item.title}</h3>
+                  <h3 className="text-xl text-white font-inter">{item.title}</h3>
                 </div>
               </div>
             </div>

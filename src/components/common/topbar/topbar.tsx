@@ -1,15 +1,16 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
+import IconClose from '@/components/icons/close';
 import IconHamburger from '@/components/icons/hamburger';
 import Logo from '@/components/icons/logo';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu';
 
@@ -18,6 +19,7 @@ import { ROUTES } from '@/common/constants/routes.constant';
 import Menu from '../menu/menu';
 
 const TopBar = () => {
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
   const router = useRouter();
 
   return (
@@ -28,26 +30,44 @@ const TopBar = () => {
             <Logo />
           </Link>
           <Menu />
-          <DropdownMenu>
-            <DropdownMenuTrigger className="ml-7">
-              <IconHamburger />
+          <DropdownMenu onOpenChange={setIsOpenMenu}>
+            <DropdownMenuTrigger className="ml-7 focus:shadow-none">
+              {isOpenMenu ? <IconClose /> : <IconHamburger />}
             </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56 bg-gray-400 rounded-none" side="bottom" align="end">
-              <DropdownMenuItem className="cursor-pointer" onClick={() => router.push(ROUTES.MY_RECORD)}>
+            <DropdownMenuContent
+              className="w-[280px] bg-gray-400 rounded-none p-0 border-none"
+              side="bottom"
+              align="end"
+            >
+              <DropdownMenuItem
+                className="cursor-pointer text-[18px] leading-[26px] px-8 py-6 rounded-none text-white focus:text-white focus:bg-primary-400"
+                onClick={() => router.push(ROUTES.MY_RECORD)}
+              >
                 自分の記録
               </DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>体重グラフ</DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>目標</DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>選択中のコース</DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem className="cursor-pointer" onClick={() => router.push(ROUTES.COLUMN)}>
+              <div className="border-t border-b border-t-[#2E2E2E] border-b-white opacity-20"></div>
+              <DropdownMenuItem className="cursor-pointer text-[18px] leading-[26px] px-8 py-6 rounded-none text-white focus:text-white focus:bg-primary-400">
+                体重グラフ
+              </DropdownMenuItem>
+              <div className="border-t border-b border-t-[#2E2E2E] border-b-white opacity-20"></div>
+              <DropdownMenuItem className="cursor-pointer text-[18px] leading-[26px] px-8 py-6 rounded-none text-white focus:text-white focus:bg-primary-400">
+                目標
+              </DropdownMenuItem>
+              <div className="border-t border-b border-t-[#2E2E2E] border-b-white opacity-20"></div>
+              <DropdownMenuItem className="cursor-pointer text-[18px] leading-[26px] px-8 py-6 rounded-none text-white focus:text-white focus:bg-primary-400">
+                選択中のコース
+              </DropdownMenuItem>
+              <div className="border-t border-b border-t-[#2E2E2E] border-b-white opacity-20"></div>
+              <DropdownMenuItem
+                className="cursor-pointer text-[18px] leading-[26px] px-8 py-6 rounded-none text-white focus:text-white focus:bg-primary-400"
+                onClick={() => router.push(ROUTES.COLUMN)}
+              >
                 コラム一覧
               </DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuItem>設定</DropdownMenuItem>
+              <div className="border-t border-b border-t-[#2E2E2E] border-b-white opacity-20"></div>
+              <DropdownMenuItem className="cursor-pointer text-[18px] leading-[26px] px-8 py-6 rounded-none text-white focus:text-white focus:bg-primary-400">
+                設定
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
         </div>

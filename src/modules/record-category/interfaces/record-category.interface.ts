@@ -3,4 +3,5 @@ export type RecordCategoryItem = {
   image: string;
   title: string;
   description: string;
+  section: string;
 };

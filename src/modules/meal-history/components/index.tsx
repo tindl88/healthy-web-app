@@ -40,7 +40,11 @@ const MealHistory = () => {
           </div>
           <div className="text-center">
             {hasNextPage && (
-              <Button className="mt-7" disabled={!hasNextPage || isFetchingNextPage} onClick={() => fetchNextPage()}>
+              <Button
+                className="mt-7 px-12 py-7 text-[18px] leading-[26px] bg-gradient-to-t from-primary-300 to-primary-400"
+                disabled={!hasNextPage || isFetchingNextPage}
+                onClick={() => fetchNextPage()}
+              >
                 {isFetchingNextPage ? '読み込み中...' : '記録をもっと見る'}
               </Button>
             )}

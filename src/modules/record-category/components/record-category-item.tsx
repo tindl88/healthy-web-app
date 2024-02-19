@@ -2,6 +2,8 @@ import React, { FC } from 'react';
 import Image from 'next/image';
 import classNames from 'classnames';
 
+import useScrollTo from '@/common/hooks/use-scroll-to';
+
 import { RecordCategoryItem } from '../interfaces/record-category.interface';
 
 type RecordCategoryItemProps = {
@@ -10,9 +12,15 @@ type RecordCategoryItemProps = {
 };
 
 const RecordCategoryItem: FC<RecordCategoryItemProps> = ({ className, item, ...rest }) => {
+  const scrollTo = useScrollTo();
+
   return (
     <div className={classNames('record-cate-item p-6 bg-primary-300', className)} {...rest}>
-      <div key={item.id} className="w-[240px] h-[240px] relative cursor-pointer">
+      <div
+        key={item.id}
+        className="w-[240px] h-[240px] relative cursor-pointer"
+        onClick={() => scrollTo.element(item.section)}
+      >
         <Image
           src={item.image}
           width={240}

@@ -22,7 +22,7 @@ const MyDiary = () => {
   });
 
   return (
-    <div className="mt-14">
+    <div id="my-diary" className="mt-14">
       {status === 'pending' ? (
         <p>Loading...</p>
       ) : status === 'error' ? (
@@ -41,7 +41,11 @@ const MyDiary = () => {
           </div>
           <div className="text-center">
             {hasNextPage && (
-              <Button className="mt-7" disabled={!hasNextPage || isFetchingNextPage} onClick={() => fetchNextPage()}>
+              <Button
+                className="mt-7 px-12 py-7 text-[18px] leading-[26px] bg-gradient-to-t from-primary-300 to-primary-400"
+                disabled={!hasNextPage || isFetchingNextPage}
+                onClick={() => fetchNextPage()}
+              >
                 {isFetchingNextPage ? '読み込み中...' : '自分の日記をもっと見る'}
               </Button>
             )}
