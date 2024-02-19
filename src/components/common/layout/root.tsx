@@ -9,7 +9,7 @@ type RootProps = {
 };
 
 const Root: FC<RootProps> = ({ className, children }) => {
-  return <div className={classNames('root-app flex h-full grow flex-col', className)}>{children}</div>;
+  return <div className={classNames('root-app grow', className)}>{children}</div>;
 };
 
 export default Root;

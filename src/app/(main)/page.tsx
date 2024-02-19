@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 
 import MealCategories from '@/modules/meal-category/components/meal-categories';
+import MealHistory from '@/modules/meal-history/components';
 
 import { PageBaseProps } from '@/common/interfaces/page.interface';
 
@@ -10,6 +11,7 @@ export default function HomePage(_pageProps: PageBaseProps) {
     <div className="grow">
       <div className="container">
         <MealCategories />
+        <MealHistory />
       </div>
     </div>
   );
