@@ -66,20 +66,18 @@
 @layer utilities {
   .scrollbar {
     overflow: auto;
-    scrollbar-gutter: var(--gutter, auto);
-    scrollbar-color: red transparent;
-    scrollbar-width: thin;
+    scrollbar-gutter: 10px;
     &::-webkit-scrollbar {
-      @apply h-2 w-2;
+      @apply h-[6px] w-[6px];
     }
     &::-webkit-scrollbar-track {
-      @apply rounded bg-card;
+      @apply rounded bg-gray-400;
     }
     &::-webkit-scrollbar-thumb {
-      @apply rounded bg-primary;
+      @apply rounded bg-primary-300;
     }
     &::-webkit-scrollbar-thumb:hover {
-      @apply bg-primary;
+      @apply bg-primary-300;
     }
     &.scrolling-touch {
       -webkit-overflow-scrolling: touch;
