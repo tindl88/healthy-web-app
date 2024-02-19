@@ -2,6 +2,7 @@
 
 import React, { FC } from 'react';
 import Image from 'next/image';
+import classNames from 'classnames';
 
 import CircularProgress from '@/components/common/circle-progress/circle-progress';
 
@@ -11,9 +12,9 @@ type AchievementRateProps = {
   className?: string;
 };
 
-const AchievementRate: FC<AchievementRateProps> = () => {
+const AchievementRate: FC<AchievementRateProps> = ({ className }) => {
   return (
-    <div className="meal-item relative">
+    <div className={classNames('achievement-rate relative', className)}>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[181px] h-[181px]">
         <CircularProgress value={PERCENTAGE} />
         <div className="font-inter absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white space-x-1.5">

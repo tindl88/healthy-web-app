@@ -32,7 +32,7 @@ const categories: Item[] = [
 
 const ExerciseList: FC<ExerciseListProps> = ({ className, ...rest }) => {
   return (
-    <div className={classNames('exercise-list text-white bg-dark-500 py-4 px-6', className)} {...rest}>
+    <div className={classNames('exercise-list text-white bg-dark-500 py-4 px-6 mt-14', className)} {...rest}>
       <div className="flex items-center">
         <h3 className="text-[15px] leading-[18px]">
           MY

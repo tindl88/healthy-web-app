@@ -7,7 +7,7 @@ import NoSsr from '@/components/common/no-ssr/no-ssr';
 
 const BodyFatRecordGraph = () => {
   return (
-    <div className="bg-dark-500 px-6 py-4">
+    <div className="bg-dark-500 px-6 py-4 mt-14">
       <div className="flex items-center text-white">
         <h3 className="text-[15px] leading-[18px]">
           BODY

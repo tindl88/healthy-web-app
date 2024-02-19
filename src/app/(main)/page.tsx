@@ -16,8 +16,10 @@ export default function HomePage(_pageProps: PageBaseProps) {
           <AchievementRate />
           <BodyFatPercentGraph />
         </div>
-        <MealCategories />
-        <MealHistory />
+        <div className="w-[960px] mx-auto">
+          <MealCategories />
+          <MealHistory />
+        </div>
       </div>
     </div>
   );

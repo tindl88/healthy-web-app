@@ -22,7 +22,7 @@ const TopBar = () => {
 
   return (
     <div className="topbar bg-dark-500">
-      <div className="container">
+      <div className="w-[960px] mx-auto">
         <div className="flex items-center justify-between h-16">
           <Link href={ROUTES.TOP_PAGE}>
             <Logo />

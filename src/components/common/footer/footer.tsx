@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className="footer bg-dark-500 text-white">
+    <div className="footer bg-dark-500 text-white mt-14">
       <div className="container py-14">
         <Link className="py-2 px-6 text-white text-[11px] leading-4" href={'/my-records'}>
           <span>会員登録</span>

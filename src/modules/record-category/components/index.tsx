@@ -19,7 +19,7 @@ const categories: Item[] = [
 
 const RecordCategories: FC<RecordCategoriesProps> = ({ className, ...rest }) => {
   return (
-    <div className={classNames('record-categories grid grid-cols-3 gap-12', className)} {...rest}>
+    <div className={classNames('record-categories grid grid-cols-3 gap-12 mt-14', className)} {...rest}>
       {categories.map(item => {
         return <RecordCategoryItem key={item.id} item={item} />;
       })}
