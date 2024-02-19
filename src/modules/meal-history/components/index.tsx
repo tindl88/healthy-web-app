@@ -22,7 +22,7 @@ const MealHistory = () => {
   });
 
   return (
-    <div className="w-[960px] mx-auto">
+    <div className="mt-6 mx-auto">
       {status === 'pending' ? (
         <p>Loading...</p>
       ) : status === 'error' ? (
