@@ -5,18 +5,18 @@ import { CartesianGrid, Line, LineChart, Text, Tooltip, XAxis } from 'recharts';
 
 const LINE_COLORS = ['#FFCC21', '#8FE9D0'];
 const LINE_STROKE_WIDTH = 3;
+const LINE_DOT_STROKE_WIDTH = 3;
 const CARTESIAN_GRID_COLOR = '#777777';
 const CARTESIAN_GRID_STROKE_WIDTH = 1;
-const LINE_DOT_STROKE_WIDTH = 3;
 
 type BodyChartProps = {
-  width?: number;
+  width: number;
   height: number;
   margin?: {
-    top: number;
-    right: number;
-    bottom: number;
-    left: number;
+    top?: number;
+    right?: number;
+    bottom?: number;
+    left?: number;
   };
   data: {
     name: string;
