@@ -1,6 +1,8 @@
 import React, { FC, ReactNode } from 'react';
 import classNames from 'classnames';
 
+import TopBar from '../topbar/topbar';
+
 import BodyInjector from './body-injector';
 import Providers from './providers';
 
@@ -13,6 +15,7 @@ const Body: FC<BodyProps> = ({ className, children }) => {
   return (
     <body className={classNames('flex h-full flex-col antialiased', className)}>
       <Providers>
+        <TopBar />
         {children}
         <BodyInjector />
       </Providers>

@@ -18,8 +18,7 @@ module.exports = {
     screens: Object.fromEntries(Object.entries(screens).filter(([key]) => key !== '2xl')),
     fontFamily: {
       notosansjp: 'var(--font-noto-sans-jp)',
-      inter: 'var(--font-inter)',
-      sans: ['var(--font-sans)', ...fontFamily.sans]
+      inter: 'var(--font-inter)'
     },
     extend: {
       // https://nekocalc.com/px-to-rem-converter
@@ -47,32 +46,22 @@ module.exports = {
       },
       colors: {
         // https://uicolors.app/create
+        gray: {
+          400: '#777777'
+        },
+        dark: {
+          500: '#414141',
+          600: '#2E2E2E'
+        },
         primary: {
-          50: '#eff5ff',
-          100: '#dbe8fe',
-          200: '#bfd7fe',
-          300: '#93bbfd',
-          400: '#609afa',
-          500: '#3b82f6',
-          600: '#2570eb',
-          700: '#1d64d8',
-          800: '#1e55af',
-          900: '#1e478a',
-          950: '#172e54',
+          300: '#FFCC21',
+          400: '#FF963C',
+          500: '#EA6C00',
           DEFAULT: 'hsl(var(--primary))',
           foreground: 'hsl(var(--primary-foreground))'
         },
         secondary: {
-          50: '#fdfbf6',
-          100: '#fbf7ed',
-          200: '#f5ead3',
-          300: '#eedeb8',
-          400: '#e2c583',
-          500: '#d5ac4e',
-          600: '#c09b46',
-          700: '#a0813b',
-          800: '#80672f',
-          900: '#685426',
+          300: '#8FE9D0',
           DEFAULT: 'hsl(var(--secondary))',
           foreground: 'hsl(var(--secondary-foreground))'
         },

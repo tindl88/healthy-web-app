@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Logo: React.FC<React.SVGAttributes<Record<string, unknown>>> = ({ width = 32 }) => {
+const Logo: React.FC<React.SVGAttributes<Record<string, unknown>>> = ({ width = 109 }) => {
   return (
     <svg
       width={width}
