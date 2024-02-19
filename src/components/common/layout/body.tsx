@@ -1,6 +1,7 @@
 import React, { FC, ReactNode } from 'react';
 import classNames from 'classnames';
 
+import Footer from '../footer/footer';
 import TopBar from '../topbar/topbar';
 
 import BodyInjector from './body-injector';
@@ -17,6 +18,7 @@ const Body: FC<BodyProps> = ({ className, children }) => {
       <Providers>
         <TopBar />
         {children}
+        <Footer />
         <BodyInjector />
       </Providers>
     </body>
