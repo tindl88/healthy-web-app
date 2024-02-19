@@ -1,12 +1,16 @@
 import { Metadata } from 'next';
 
+import ColumnCategories from '@/modules/column-category/components';
+
 import { PageBaseProps } from '@/common/interfaces/page.interface';
 
 export default function ColumnsPage(_pageProps: PageBaseProps) {
   return (
     <div className="grow">
       <div className="container">
-        <h1>Column</h1>
+        <div className="w-[960px] mx-auto">
+          <ColumnCategories />
+        </div>
       </div>
     </div>
   );
