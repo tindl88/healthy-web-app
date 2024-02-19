@@ -1,0 +1,63 @@
+{
+  "statusCode": 200,
+  "message": "Get posts successfully.",
+  "data": [{
+    "id": "5af8716e-7419-4a11-9d91-9480748694aa",
+    "image": "/images/column-7.jpg",
+    "title": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ",
+    "tags": ["魚料理", "和食", "DHA"],
+    "createAt": "2023-10-11T06:28:08Z"
+  }, {
+    "id": "46a3eff2-6885-4012-b5f8-9d7dd1c35848",
+    "image": "/images/column-8.jpg",
+    "title": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ",
+    "tags": ["魚料理", "和食", "DHA"],
+    "createAt": "2023-08-24T06:35:42Z"
+  }, {
+    "id": "cb7ad6d6-2b64-4997-aa00-25653b6cecbc",
+    "image": "/images/column-6.jpg",
+    "title": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ",
+    "tags": ["魚料理", "和食", "DHA"],
+    "createAt": "2023-09-23T18:16:34Z"
+  }, {
+    "id": "74936061-b3bd-496a-94ed-55878200c995",
+    "image": "/images/column-5.jpg",
+    "title": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ",
+    "tags": ["魚料理", "和食", "DHA"],
+    "createAt": "2023-10-31T08:04:27Z"
+  }, {
+    "id": "1f6726df-7a6f-4506-a099-bba0372d989b",
+    "image": "/images/column-4.jpg",
+    "title": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ",
+    "tags": ["魚料理", "和食", "DHA"],
+    "createAt": "2023-11-12T04:02:21Z"
+  }, {
+    "id": "170ec353-296f-446a-86f6-5beab365bc82",
+    "image": "/images/column-3.jpg",
+    "title": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ",
+    "tags": ["魚料理", "和食", "DHA"],
+    "createAt": "2024-01-02T00:10:18Z"
+  }, {
+    "id": "b9f99421-aa79-4fbc-9be0-6d92d0bb773a",
+    "image": "/images/column-2.jpg",
+    "title": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ",
+    "tags": ["魚料理", "和食", "DHA"],
+    "createAt": "2024-01-17T10:39:43Z"
+  }, {
+    "id": "7f3400bd-7800-4ade-90a6-a6fe7b1dd6de",
+    "image": "/images/column-1.jpg",
+    "title": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ",
+    "tags": ["魚料理", "和食", "DHA"],
+    "createAt": "2023-09-15T22:13:56Z"
+  }],
+  "meta": {
+    "paging": {
+      "currentPage": 2,
+      "itemsPerPage": 8,
+      "totalItems": 18,
+      "totalPages": 3,
+      "prevPage": 1,
+      "nextPage": 3
+    }
+  }
+}
