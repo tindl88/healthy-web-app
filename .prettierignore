@@ -1,0 +1,7 @@
+node_modules
+.next
+.vscode
+public
+patches
+next-env.d.ts
+yarn.lock
