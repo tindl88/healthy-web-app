@@ -1,0 +1,11 @@
+node_modules
+.next
+.vscode
+.github
+public
+patches
+/types
+/src/components/ui
+next-env.d.ts
+yarn.lock
+
