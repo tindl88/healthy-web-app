@@ -31,3 +31,11 @@ export function getDaysBetweenTwoDates(from?: string, to?: string): number {
 export const formatMMDD = (date: string): string => {
   return dayjs(date).format('MM.DD');
 };
+
+export const formatYYYYMMDD = (date: string): string => {
+  return dayjs(date).format('YYYY.MM.DD');
+};
+
+export const formatHHmm = (date: string): string => {
+  return dayjs(date).format('HH:mm');
+};

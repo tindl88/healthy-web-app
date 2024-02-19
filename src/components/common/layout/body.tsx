@@ -14,7 +14,7 @@ type BodyProps = {
 
 const Body: FC<BodyProps> = ({ className, children }) => {
   return (
-    <body className={classNames('flex h-full flex-col antialiased', className)}>
+    <body className={classNames('flex h-full flex-col antialiased text-dark-500', className)}>
       <Providers>
         <TopBar />
         {children}

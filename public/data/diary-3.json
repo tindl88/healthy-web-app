@@ -1,0 +1,20 @@
+{
+  "statusCode": 200,
+  "message": "Get diaries successfully.",
+  "data": [{
+    "id": "249b65f1-4cbd-45d6-91e7-0966ee2303d5",
+    "title": "私の日記の記録が一部表示されます。",
+    "description": "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト",
+    "createAt": "2024-02-09T02:55:59Z"
+  }],
+  "meta": {
+    "paging": {
+      "currentPage": 3,
+      "itemsPerPage": 8,
+      "totalItems": 17,
+      "totalPages": 3,
+      "prevPage": 2,
+      "nextPage": null
+    }
+  }
+}
