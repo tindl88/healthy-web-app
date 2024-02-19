@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 
+import ExerciseList from '@/modules/my-exercise/components';
 import RecordCategories from '@/modules/record-category/components';
 
 import { PageBaseProps } from '@/common/interfaces/page.interface';
@@ -10,6 +11,7 @@ export default function MyRecordsPage(_pageProps: PageBaseProps) {
       <div className="container">
         <div className="w-[960px] mx-auto">
           <RecordCategories />
+          <ExerciseList />
         </div>
       </div>
     </div>
