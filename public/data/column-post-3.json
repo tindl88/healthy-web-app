@@ -1,0 +1,27 @@
+{
+  "statusCode": 200,
+  "message": "Get posts successfully.",
+  "data": [{
+    "id": "e69ca756-004a-4105-b4fa-7dd517062253",
+    "image": "/images/column-7.jpg",
+    "title": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ",
+    "tags": ["魚料理", "和食", "DHA"],
+    "createAt": "2023-10-11T06:28:08Z"
+  }, {
+    "id": "ecf56255-5564-4d98-a02e-dcffab8f0a35",
+    "image": "/images/column-8.jpg",
+    "title": "魚を食べて頭もカラダも元気に！知っておきたい魚を食べるメリ",
+    "tags": ["魚料理", "和食", "DHA"],
+    "createAt": "2023-08-24T06:35:42Z"
+  }],
+  "meta": {
+    "paging": {
+      "currentPage": 3,
+      "itemsPerPage": 8,
+      "totalItems": 18,
+      "totalPages": 3,
+      "prevPage": 2,
+      "nextPage": null
+    }
+  }
+}
