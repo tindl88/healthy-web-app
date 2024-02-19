@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 
+import MyDiary from '@/modules/my-diary/components';
 import ExerciseList from '@/modules/my-exercise/components';
 import RecordCategories from '@/modules/record-category/components';
 
@@ -12,6 +13,7 @@ export default function MyRecordsPage(_pageProps: PageBaseProps) {
         <div className="w-[960px] mx-auto">
           <RecordCategories />
           <ExerciseList />
+          <MyDiary />
         </div>
       </div>
     </div>
